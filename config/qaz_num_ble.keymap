@@ -1,16 +1,40 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        Volume_Mute: Volume_Mute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp F1>;
+            label = "VOLUME_MUTE";
+        };
+
+        Volume_Down: Volume_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp F2>;
+            label = "VOLUME_DOWN";
+        };
+
+        Volume_Up: Volume_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp F3>;
+            label = "VOLUME_UP";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans
-        &trans  &trans  &trans
+&Volume_Mute         &Volume_Down  &Volume_Up  &trans
+&trans               &trans        &trans      &trans
+&kp RC(RIGHT_SHIFT)  &trans        &trans      &trans
+&trans               &trans        &trans      &trans
+&trans               &trans        &trans      &trans
             >;
         };
     };
