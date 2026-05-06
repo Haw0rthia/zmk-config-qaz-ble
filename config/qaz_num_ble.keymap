@@ -34,7 +34,7 @@
 &kp LC(N)            &kp N7             &kp N8           &kp N9
 &kp RC(RIGHT_SHIFT)  &kp N4             &kp N5           &kp N6
 &kp LC(LS(T))        &kp N1             &kp N2           &kp N3
-&kp LG(RS(LEFT))     &trans             &trans           &kp LG(LS(RIGHT))
+&kp LG(RS(LEFT))     &kp LG(HOME)       &kp LG(D)        &kp LG(LS(RIGHT))
             >;
         };
     };
