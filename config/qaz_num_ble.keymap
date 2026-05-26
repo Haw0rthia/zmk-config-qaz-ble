@@ -31,9 +31,9 @@
         layer_1 {
             bindings = <
 &kp C_MUTE           &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(LS(S))
-&kp LC(N)            &kp N7             &kp N8           &kp N9
-&kp RC(RIGHT_SHIFT)  &kp N4             &kp N5           &kp N6
-&kp LC(LS(T))        &kp N1             &kp N2           &kp N3
+&kp LC(N)            &kp F13            &kp F14          &kp F15
+&kp RC(RIGHT_SHIFT)  &kp F16            &kp F17          &kp F18
+&kp LC(LS(T))        &kp F19            &kp F20          &kp F21
 &kp LG(RS(LEFT))     &kp LG(HOME)       &kp LG(D)        &kp LG(LS(RIGHT))
             >;
         };
